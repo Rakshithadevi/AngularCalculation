@@ -33,6 +33,7 @@ Publish the website in the given URL.
 
 ### PROGRAM :
 ### app.component.html coding:
+```
 <body>
 <h1>Math Calculations</h1>
 <div class="container">
@@ -46,7 +47,9 @@ Publish the website in the given URL.
 </div>
 </div>
 </body>
+```
 ### app.component.css coding:
+```
 * {
   box-sizing:border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -87,7 +90,9 @@ h1{
   margin: 0px 0px 0px 0px;
   color: #000000;
 }
+```
 ### app.component.ts coding:
+```
 import { Component } from '@angular/core';
 
 @Component({
@@ -98,7 +103,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'mathcalculations';
 }
+```
 ### rectangle.component.html coding:
+```
 <h2>Area of a Rectangle</h2>
     <div class="formelement">
     Length=<input type="text" [(ngModel)]="length"> Meters <br/>
@@ -112,7 +119,9 @@ export class AppComponent {
     <div class="formelement">
     Area=<input type="text" [value]="area"> Meters<sup>2</sup>
     </div>
+    ```
 ### rectangle.component.css coding:
+```
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -141,7 +150,9 @@ export class AppComponent {
       margin-top: 5px;
       margin-bottom: 5px;
   }
+  ```
 ### rectangle.component.ts coding:
+```
 import { Component } from "@angular/core"
 
 @Component({
@@ -164,7 +175,9 @@ export class RectangleComponent{
         this.area =  this.length * this.breadth;
     }
 }
+```
 ### cone.component.html coding:
+```
 <h2>Volume of a Cone</h2>
 <div class="formelement">
 Radius=<input type="text" [(ngModel)]="radius"> Meters <br/>
@@ -178,7 +191,9 @@ Height=<input type="text" [(ngModel)]="height"> Meters <br/>
 <div class="formelement">
 Volume=<input type="text" [value]="volume"> Meters<sup>3</sup>
 </div>
+```
 ### cone.component.css coding:
+```
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -217,7 +232,9 @@ export class ConeComponent{
         this.volume = 3.14 * this.radius * this.radius * this.height * 0.3;
     }
 }
+```
 ### app.module.ts coding:
+```
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -239,7 +256,11 @@ import { RectangleComponent } from './rectangle/rectangle.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+```
+
 OUTPUT:
+![image](https://user-images.githubusercontent.com/94165326/153798706-3114b9de-98f9-4c39-aba7-e46ce2e61aac.png)
+
 
 
 ### Result:
