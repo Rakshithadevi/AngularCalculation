@@ -119,7 +119,7 @@ export class AppComponent {
     <div class="formelement">
     Area=<input type="text" [value]="area"> Meters<sup>2</sup>
     </div>
-    ```
+```
 ### rectangle.component.css coding:
 ```
 * {
@@ -150,7 +150,7 @@ export class AppComponent {
       margin-top: 5px;
       margin-bottom: 5px;
   }
-  ```
+```
 ### rectangle.component.ts coding:
 ```
 import { Component } from "@angular/core"
